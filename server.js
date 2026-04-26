@@ -13,7 +13,7 @@ const session=require('express-session')
 const flash=require('connect-flash')
 const { MongoNetworkError } = require('mongodb')
 const { defaultMaxListeners } = require('nodemailer/lib/xoauth2')
-const { findOne } = require('mongodb/lib/operations/collection_ops')
+const { MongoClient } = require('mongodb');
 const MongoDBStore = require('connect-mongodb-session')(session);
 require('dotenv').config()
 
